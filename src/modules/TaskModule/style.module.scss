@@ -1,0 +1,13 @@
+@import "../../scss/variables";
+
+.wrapper{
+    min-height: $standard_module_min_height;
+}
+
+.wrapper ul{
+
+}
+.wrapper li{
+    margin: 10px 0;
+    text-align: start;
+}

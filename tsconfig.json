@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      // Не позволяет использовать переменные без явного указания типа
+      "noImplicitAny": false,
+      "module": "ESNext",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      //Для абсолютного импорта
+    //   "baseUrl":".",
+      "moduleResolution": "node",
+      // Для привычных импортов (вместо commonJS)
+      "esModuleInterop": true,
+      // Чтобы не писать в импортах import * as 
+      "allowSyntheticDefaultImports": true,
+     
+    },
+    //Для того чтобы нормально работали экспорты/импорты
+    "ts-node":{
+        "compilerOptions":{
+            "module":"CommonJS",
+            //Для того чтобы не было необходимости импортирвоаать react
+            "jsx": "react-jsx"
+        }
+      },
+  }

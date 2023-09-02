@@ -1,0 +1,22 @@
+$themes: (
+  'dark': (
+    'primary': rgb(53, 53, 53),
+    'secondary': rgb(124, 124, 124)
+  ),
+  'light': (
+    'primary': rgb(200, 200, 200),
+    'secondary': rgb(251, 251, 251)
+  ),
+  'red': (
+    'primary': firebrick,
+    'secondary': red
+  ),
+  'blue': (
+    'primary': rgb(7, 8, 90),
+    'secondary': rgb(115, 132, 239)
+  ),
+  'green': (
+    'primary': rgb(12, 74, 10),
+    'secondary': rgb(162, 251, 168)
+  ),
+) !default;

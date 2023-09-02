@@ -1,0 +1,14 @@
+@import "../../scss/variables";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: $standard_module_min_height;
+    margin: 20px;
+}
+.photoWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

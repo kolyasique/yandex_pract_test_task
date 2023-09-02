@@ -1,0 +1,16 @@
+.menubutton{
+    border: none;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: ease-in-out 200ms;
+}
+.menubutton:hover{
+    background-color: azure;
+    transition: ease-in-out 200ms;
+    -webkit-box-shadow: 0px 0px 21px 6px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 21px 6px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 21px 6px rgba(255, 255, 255, 0.2);
+}
