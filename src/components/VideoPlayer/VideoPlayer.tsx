@@ -1,6 +1,5 @@
 import * as React from "react";
 import videojs from "video.js";
-import { LazyVideo } from 'react-lazy-media'
 import video from '../../assets/IMG_3479.mp4'  
 // Styles
 import "video.js/dist/video-js.css";
@@ -32,8 +31,6 @@ const videoJsOptions = {
 // interface IVideoPlayerProps {
 //     videoJsOptions: Object;
 //   }
-
-  console.log(videojs)
 const VideoPlayer: React.FC = React.memo(() => {
   const videoNode = React.useRef<HTMLVideoElement>();
   const player = React.useRef<any>();

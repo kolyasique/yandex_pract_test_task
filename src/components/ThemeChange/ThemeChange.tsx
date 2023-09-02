@@ -13,7 +13,6 @@ export default function ThemeChange({}: Props) {
         document.documentElement.classList.add(themeElement)
         document.querySelector('.theme').addEventListener('click', (event:any)=>{
             if (event.target.nodeName === 'INPUT'){
-                console.log('SLIVA')
                 setTheme(event.target.value)
                 localStorage.setItem('theme', event.target.value)
                 document.documentElement.classList.remove('dark', 'light', 'red', 'blue', 'green')
@@ -22,18 +21,14 @@ export default function ThemeChange({}: Props) {
         })
     },[])
 
-   useEffect(()=>{
-    console.log(theme)
-   },[theme])
-
     
   return (
     <div>
-        <label><input type="radio" name='theme' value='dark' checked={theme === 'dark' ? true : null}/>Темная</label>
-        <label><input type="radio" name='theme' value='light' checked={theme === 'light' ? true : null}/>Светлая</label>
-        <label><input type="radio" name='theme' value='red' checked={theme === 'red' ? true : null}/>Красная</label>
-        <label><input type="radio" name='theme' value='blue' checked={theme === 'blue' ? true : null}/>Синяя</label>
-        <label><input type="radio" name='theme' value='green' checked={theme === 'green' ? true : null}/>Зеленая</label>
+        <label><input type="radio" name='theme' value='dark' defaultChecked={theme === 'dark' ? true : null}/>Темная</label>
+        <label><input type="radio" name='theme' value='light' defaultChecked={theme === 'light' ? true : null}/>Светлая</label>
+        <label><input type="radio" name='theme' value='red' defaultChecked={theme === 'red' ? true : null}/>Красная</label>
+        <label><input type="radio" name='theme' value='blue' defaultChecked={theme === 'blue' ? true : null}/>Синяя</label>
+        <label><input type="radio" name='theme' value='green' defaultChecked={theme === 'green' ? true : null}/>Зеленая</label>
     </div>
   )
 }
