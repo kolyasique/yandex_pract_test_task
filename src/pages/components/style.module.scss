@@ -12,3 +12,9 @@
     height: 10vh;
     background-color: #282c34;
 }
+
+@media (max-width:768px) {
+    .header{
+        justify-content: center;
+    }
+}

@@ -11,10 +11,10 @@ type Props = {}
 export default function PhotoModule({}: Props) {
   return (
     <div className={cl.wrapper}>
-         <H2Custom text='Это я'></H2Custom>
+         <H2Custom text='Фотографии'></H2Custom>
          <div className={cl.photoWrapper}>
         <PhotoBlock src={photo} alt='Я' description='Это мое последнее селфи'/>
-        <PhotoBlock src={schoolPhoto} alt='Фото со школы' description='Фото со школы. Я справа'/>
+        <PhotoBlock src={schoolPhoto} alt='Фото со школы' description='Фото со школы'/>
         </div>
     </div>
   )

@@ -12,3 +12,8 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+@media (max-width:768px) {
+    .photoWrapper{
+        flex-direction: column;
+    }
+}
