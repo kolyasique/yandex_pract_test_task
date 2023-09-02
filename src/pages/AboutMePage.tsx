@@ -11,8 +11,8 @@ export default function AboutMePage({}: Props) {
     <>
         <Header />
             <PhotoModule/>
-            <VideoModule/>
             <MyHistoryModule/>
+            <VideoModule/>
         <Footer />
     </>
   )
